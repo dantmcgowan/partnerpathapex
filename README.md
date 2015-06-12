@@ -22,7 +22,9 @@ See the wiki regarding [Configuring a Connected App]
 Apply the code below to your [Salesforce] implementation using the steps shown in the [Apex Tutorial].
 ## Code
 Note: In order for syntax hilighting to work these source files have been renamed. Please follow **TODO** at the top of earch file to rename with the required extension.
-[Apex Trigger] and [Apex Class]
+
++    [Apex Trigger]
++    [Apex Class]
 
 ## Development/Contact
 [Dan McGowan]
