@@ -6,9 +6,11 @@ Necessary SFDC configuration and APEX code to facilitate PartnerPath synchroniza
   - [Opportunity]
   - [Account]
   - [Contact]
-  - [Custom Objects]
+  - [Custom Objects] 
 
-with your [PartnerPath] application. Using [Apex] classes and triggers allows you to *synchronize* your web application with your [Salesforce] implementation.
+with your [PartnerPath] application. This is accomplished by communicating by [REST] using the [PartnerPath API]. 
+
+Using [Apex] classes and triggers allows you to *synchronize* your web application with your [Salesforce] implementation.
 
 Note: You need not be a [PartnerPath] customer to leverage the provided code. You simply need a third party [REST] based application to receive the updates from your [Salesforce] implementation. Substitute your application authorization credentials and API calls and off you go!
 
@@ -23,7 +25,13 @@ See the wiki regarding [Configuring a Connected App]
 ## Installation
 Apply the code below to your [Salesforce] implementation using the steps shown in the [Apex Tutorial].
 ## Code
-Note: In order for syntax hilighting to work these source files have been renamed. Please follow **TODO** at the top of earch file to rename with the required extension.
+### **Note**
+
+In order for syntax hilighting to work these source files have been renamed. Please follow **TODO** at the top of earch file to rename with the required extension.
+### **Note**
+
+Replace ```thepartnerpathtoken``` with a real authorization token which can be obtained by contacting [PartnerPath].
+
 
 +    [Apex Trigger]
 +    [Apex Class]
@@ -44,7 +52,8 @@ Write Tests
 [contact]:https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_contact.htm#topic-title
 [lead]:https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_lead.htm#topic-title
 [custom objects]:https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_custom_objects.htm
-[partnerpath]:http://demopath.test.amazonconsulting.com/api/v1/
+[partnerpath]:http://parnter-path.com/
+[partnerpath api]:http://demopath.test.amazonconsulting.com/api/v1/
 [salesforce]:http://salesforce.com
 [rest]:http://www.restapitutorial.com/lessons/whatisrest.html
 [apex]:https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/
