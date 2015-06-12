@@ -17,7 +17,9 @@ Note: You need not be a [PartnerPath] customer to leverage the provided code. Yo
 
 ## Configuration
 Synchronization requires a [Salesforce] **Connected App**
+
 See the wiki regarding [Configuring a Connected App]
+
 ## Installation
 Apply the code below to your [Salesforce] implementation using the steps shown in the [Apex Tutorial].
 ## Code
