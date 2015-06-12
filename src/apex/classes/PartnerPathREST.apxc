@@ -43,7 +43,7 @@ public class PartnerPathREST {
          //req.setMethod('GET');
          req.setHeader('Content-Type', 'application/json');
          req.setHeader('X-API-Version', '1');
-         req.setHeader('Authorization', 'Token access_token=337a966a061ed2beb61f5172772162a8');
+         req.setHeader('Authorization', 'Token access_token=thepartnerpathtoken');
          req.setBody(jsonDeal);
          req.setCompressed(false);
          System.debug('>>>>>>>>>>>>>>>>>>>>>>>>>> Content-Type: ' + req.getHeader('Content-Type') + ' ---------');
