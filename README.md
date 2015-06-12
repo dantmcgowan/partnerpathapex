@@ -1,5 +1,5 @@
 # partnerpathapex
-Necessary SFDC configuration and APEX code to facilitate PartnerPath synchronization. 
+Necessary SFDC configuration and APEX code to facilitate [PartnerPath] synchronization. 
 
 [Salesforce] Integration with the [PartnerPath] portal. Synchronize:
   - [Lead]
