@@ -57,7 +57,7 @@ Write Tests
 [salesforce]:http://salesforce.com
 [rest]:http://www.restapitutorial.com/lessons/whatisrest.html
 [apex]:https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/
-[apex trigger]:https://github.com/dantmcgowan/partnerpathapex/blob/master/src/apex/triggers/PPDealUpdate.apxt
-[apex class]:https://github.com/dantmcgowan/partnerpathapex/blob/master/src/apex/classes/PartnerPathREST.apxc
+[apex trigger]:https://github.com/dantmcgowan/partnerpathapex/blob/master/src/apex/triggers/PPDealUpdate.java
+[apex class]:https://github.com/dantmcgowan/partnerpathapex/blob/master/src/apex/classes/PartnerPathREST.java
 [apex tutorial]:https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_qs_HelloWorld.htm
 [configuring a connected app]:https://github.com/dantmcgowan/partnerpathapex/wiki
