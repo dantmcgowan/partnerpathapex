@@ -8,9 +8,31 @@ Necessary SFDC configuration and APEX code to facilitate [PartnerPath] synchroni
   - [Contact]
   - [Custom Objects] 
 
-with your [PartnerPath] application. This is accomplished by communicating by [REST] using the [PartnerPath API]. 
+with your [PartnerPath] application. This is accomplished by communicating by [REST] using APIs.
+ 
+For communication to [Salesforce] from [PartnerPath] use the [SFDC REST API].
 
-Using [Apex] classes and triggers allows you to *synchronize* your web application with your [Salesforce] implementation.
+For communication to [PartnerPath] from [Salesforce] use the [PartnerPath API]. This is accomplished using [Apex] classes and triggers. 
+
+To implement total synchronization employ both APIs.
+
+|             |          Grouping           ||
+First Header  | Second Header | Third Header |
+ ------------ | :-----------: | -----------: |
+Content       |          *Long Cell*        ||
+Content       |   **Cell**    |         Cell |
+
+New section   |     More      |         Data |
+And more      | With an escaped '\|'         ||  
+[Prototype table]
+
+
+|                  	| PartnerPath => SFDC                                                  	| SFDC => PartnerPath                                                                     	|
+|------------------	|----------------------------------------------------------------------	|-----------------------------------------------------------------------------------------	|
+| firing mechanism 	| database create/update and workflow events/transitions are supported 	| database create/update                                                                  	|
+| implementation   	| operation calls via  SFDC REST interface                             	| bulkified SOQL and APEX calls using PartnerPath REST interface                          	|
+| testing          	| integration testing mocking actual API calls                         	| SFDC unit testing for all custom APEX classes, triggers and custom objects and settings 	|
+ 
 
 Note: You need not be a [PartnerPath] customer to leverage the provided code. You simply need a third party [REST] based application to receive the updates from your [Salesforce] implementation. Substitute your application authorization credentials and API calls and off you go!
 
@@ -61,3 +83,4 @@ Write Tests
 [apex class]:https://github.com/dantmcgowan/partnerpathapex/blob/master/src/apex/classes/PartnerPathREST.java
 [apex tutorial]:https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_qs_HelloWorld.htm
 [configuring a connected app]:https://github.com/dantmcgowan/partnerpathapex/wiki
+[SFDC REST API]:https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/
