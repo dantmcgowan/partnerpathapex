@@ -16,24 +16,14 @@ For communication to [PartnerPath] from [Salesforce] use the [PartnerPath API]. 
 
 To implement total synchronization employ both APIs.
 
-|             |          Grouping           ||
-First Header  | Second Header | Third Header |
- ------------ | :-----------: | -----------: |
-Content       |          *Long Cell*        ||
-Content       |   **Cell**    |         Cell |
-
-New section   |     More      |         Data |
-And more      | With an escaped '\|'         ||  
-[Prototype table]
-
 
 |                  	| PartnerPath => SFDC                                                  	| SFDC => PartnerPath                                                                     	|
 |------------------	|----------------------------------------------------------------------	|-----------------------------------------------------------------------------------------	|
-| firing mechanism 	| database create/update and workflow events/transitions are supported 	| database create/update                                                                  	|
-| implementation   	| operation calls via  SFDC REST interface                             	| bulkified SOQL and APEX calls using PartnerPath REST interface                          	|
-| testing          	| integration testing mocking actual API calls                         	| SFDC unit testing for all custom APEX classes, triggers and custom objects and settings 	|
+| #### firing mechanism 	| database create/update and workflow events/transitions are supported 	| database create/update                                                                  	|
+| #### implementation   	| operation calls via  SFDC REST interface                             	| bulkified SOQL and APEX calls using PartnerPath REST interface                          	|
+| #### testing          	| integration testing mocking actual API calls                         	| SFDC unit testing for all custom APEX classes, triggers and custom objects and settings 	|
  
-
+[PartnerPath SFDC Syncronization]
 Note: You need not be a [PartnerPath] customer to leverage the provided code. You simply need a third party [REST] based application to receive the updates from your [Salesforce] implementation. Substitute your application authorization credentials and API calls and off you go!
 
 ## Version
