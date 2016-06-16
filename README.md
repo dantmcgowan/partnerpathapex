@@ -19,7 +19,7 @@ To implement total synchronization employ both APIs.
 |                  	| PartnerPath => SFDC                                                  	| SFDC => PartnerPath                                                                     	|
 |------------------	|----------------------------------------------------------------------	|-----------------------------------------------------------------------------------------	|
 | firing mechanism 	| database create/update and workflow events/transitions are supported 	| database create/update                                                                  	|
-| implementation   	| operation calls via  SFDC REST interface                             	| bulkified SOQL and APEX calls using PartnerPath REST interface                          	|
+| implementation   	| operation calls via [SFDC REST API]                             	    | bulkified SOQL and APEX calls using [PartnerPath API]                          	|
 | testing          	| integration testing mocking actual API calls                         	| SFDC unit testing for all custom APEX classes, triggers and custom objects and settings 	||
 
  
@@ -61,8 +61,8 @@ Replace ```thepartnerpathtoken``` with a real authorization token which can be o
 [salesforce]:http://salesforce.com
 [rest]:http://www.restapitutorial.com/lessons/whatisrest.html
 [apex]:https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/
-[apex trigger]:https://github.com/dantmcgowan/partnerpathapex/blob/master/src/apex/triggers/PPDealUpdate.java
-[apex class]:https://github.com/dantmcgowan/partnerpathapex/blob/master/src/apex/classes/PartnerPathREST.java
+[apex trigger]:https://github.com/dantmcgowan/partnerpathapex/blob/master/src/apex/triggers/PPDealUpdate.trigger
+[apex class]:https://github.com/dantmcgowan/partnerpathapex/blob/master/src/apex/classes/PartnerPathREST.cls
 [apex tutorial]:https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_qs_HelloWorld.htm
 [configuring a connected app]:https://github.com/dantmcgowan/partnerpathapex/wiki
 [SFDC REST API]:https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/
