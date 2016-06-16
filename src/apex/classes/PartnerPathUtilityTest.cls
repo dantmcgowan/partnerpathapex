@@ -4,22 +4,12 @@ public class PartnerPathUtilityTest {
         // Test data setup
         // Custom Setting
         String endpoint = 'http://demopath.test.amazonconsulting.com/api/deals/';
-        String token = '337a966a061ed2beb61f5172772162a8';
-        PartnerPathConfig__c cs = new PartnerPathConfig__c(Name='Acceptance', 
-                                                           Token__c = token, 
-                                                           Endpoint__c = endpoint);
-        insert cs;        
-    }   
-    @isTest static void testGetToken(){
-        // Test data setup
-        String token_input = '337a966a061ed2beb61f5172772162a8';
-        // Perform test
-        Test.startTest();
-        String token_read = PartnerPathUtility.getToken();
-        Test.stopTest();
-        // 
-        System.assertEquals(token_input, token_read);
-    } 
+        String token = '742a966a061ed2beb61f5179162162a8';
+        PartnerPathConfig__c cs = new PartnerPathConfig__c(Name='Acceptance',
+                Token__c = token,
+                Endpoint__c = endpoint);
+        insert cs;
+    }
     @isTest static void testIsSandbox(){
         // Perform test
         Test.startTest();
@@ -37,5 +27,5 @@ public class PartnerPathUtilityTest {
         Test.stopTest();
         // 
         System.assert(endpoint_read.startsWith(endpoint_input));
-    }    
+    }
 }

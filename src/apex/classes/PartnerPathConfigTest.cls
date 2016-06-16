@@ -4,15 +4,14 @@ public class PartnerPathConfigTest {
         // Test data setup
         // Custom Setting
         String endpoint = 'http://demopath.test.amazonconsulting.com/api/deals/';
-        String token = '337a966a061ed2beb61f5172772162a8';
-        PartnerPathConfig__c cs = new PartnerPathConfig__c(Name='Acceptance', 
-                                                           Token__c = token, 
-                                                           Endpoint__c = endpoint);
-        insert cs;        
+        String token = '770a966a061ed2beb61f5172772162a8';
+        PartnerPathConfig__c cs = new PartnerPathConfig__c(Name='Acceptance',
+                Token__c = token,
+                Endpoint__c = endpoint);
+        insert cs;
     }
     @isTest static void testCustomSetting(){
         String endpoint = 'http://demopath.test.amazonconsulting.com/api/deals/';
-        String token = '337a966a061ed2beb61f5172772162a8';
         // Perform test
         Test.startTest();
         System.Debug('>>>>>>>  testCustomSetting: ');
@@ -21,7 +20,6 @@ public class PartnerPathConfigTest {
         Test.stopTest();
         //
         System.assertNotEquals(null, config);
-        System.assertEquals(token, config.Token__c);
         System.assertEquals(endpoint, config.Endpoint__c);
-    }     
+    }
 }
