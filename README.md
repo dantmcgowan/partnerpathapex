@@ -36,13 +36,10 @@ See the wiki regarding [Configuring a Connected App]
 ## Installation
 Apply the code below to your [Salesforce] implementation using the steps shown in the [Apex Tutorial].
 ## Code
-### **Note**
 
-In order for syntax hilighting to work these source files have been renamed. Please follow **TODO** at the top of earch file to rename with the required extension.
 ### **Note**
 
 Replace ```thepartnerpathtoken``` with a real authorization token which can be obtained by contacting [PartnerPath].
-
 
 +    [Apex Trigger]
 +    [Apex Class]
@@ -50,12 +47,8 @@ Replace ```thepartnerpathtoken``` with a real authorization token which can be o
 ## Development/Contact
 [Dan McGowan]
 
-## Todo's
 
-Write Tests
-
-
-<sub>[PartnerPath] &copy; 2015</sub>
+<sub>[PartnerPath] &copy; 2016</sub>
 
 [Dan McGowan]:<mailto:dmcgowan@partner-path.com>
 [account]:https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_account.htm#topic-title
