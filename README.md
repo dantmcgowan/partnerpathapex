@@ -57,7 +57,7 @@ Replace ```thepartnerpathtoken``` with a real authorization token which can be o
 [lead]:https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_lead.htm#topic-title
 [custom objects]:https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_custom_objects.htm
 [partnerpath]:http://partner-path.com/
-[partnerpath api]:http://demopath.test.amazonconsulting.com/api/v1/
+[partnerpath api]:http://demo.partner-path.com/api/v1/
 [salesforce]:http://salesforce.com
 [rest]:http://www.restapitutorial.com/lessons/whatisrest.html
 [apex]:https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/
